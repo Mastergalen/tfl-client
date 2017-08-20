@@ -1,0 +1,31 @@
+{
+  "name": "tfl-client",
+  "version": "0.1.0",
+  "description": "Node.js API wrappper for Transport for London",
+  "main": "index.js",
+  "author": "Galen Han",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix \"**/*.js\"",
+    "test": "mocha --recursive"
+  },
+  "dependencies": {
+    "deep-freeze": "^0.0.1",
+    "es6-promise": "^4.1.1",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "url-search-params": "^0.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

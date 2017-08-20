@@ -1,18 +1,18 @@
 require('dotenv').config();
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
-const TflApi = require('../index');
-const NotInUKError = require('../src/errors/NotInUKError');
 const _ = require('lodash');
+
+const TflApi = require('../../index');
+const NotInUKError = require('../../src/errors/NotInUKError');
 
 chai.use(chaiAsPromised);
 
 const expect = chai.expect;
 
-const tfl = new TflApi(process.env.TFL_APP_ID, process.env.TFL_KEY);
-
-describe('TFLApi', () => {
-  var busStopId = '490014778Q'; // Manor Gardens N7
+describe('Bus', () => {
+  let busStopId = '490014778Q'; // Manor Gardens N7
+  const tfl = new TflApi(process.env.TFL_APP_ID, process.env.TFL_KEY);
 
   describe('#findBusStopByName()', () => {
     context('when bus stop is NaptanOnstreetBusCoachStopPair', () => {

@@ -1,6 +1,6 @@
 {
   "name": "tfl-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.js API wrappper for Transport for London",
   "main": "index.js",
   "author": "Galen Han",

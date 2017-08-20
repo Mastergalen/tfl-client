@@ -7,6 +7,7 @@ class TflApi {
     let cfg = config.build(app_id, secret);
 
     this.bus = new Bus(cfg);
+    this.errors = require('./src/errors');
   }
 }
 

@@ -16,10 +16,10 @@ describe('Bus', () => {
 
   describe('#findBusStopByName()', () => {
     context('when bus stop is NaptanOnstreetBusCoachStopPair', () => {
-      let stopName = 'Gower Street / University College Hosp';
+      let stopName = 'Angel Station';
       it('should list all StopPoints', () => {
         return tfl.bus.findBusStopByName(stopName).then(res => {
-          expect(res[0].naptanId).to.equal('490013914N');
+          expect(res[0].naptanId).to.equal('490000007F');
         });
       });
     });

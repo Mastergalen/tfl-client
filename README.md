@@ -16,3 +16,8 @@ tfl.bus.findBusStopByName(name).then(res => {
 });
 ```
 
+## Tests
+
+```
+yarn test
+```

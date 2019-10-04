@@ -8,16 +8,10 @@
 
 This API client is not affiliated with Transport for London in any way.
 
-## Setup
-
-1. [Register](https://api.tfl.gov.uk/) for a TfL API Key
-2. Copy `.env.example` to `.env`
-3. Enter your API keys
-4. Install dependencies with `yarn install`
-
 ## Usage
 
-Import the module:
+> You must [Register](https://api.tfl.gov.uk/) for a TfL API Key
+
 ```javascript
 const TfL = require('tfl-client');
 
